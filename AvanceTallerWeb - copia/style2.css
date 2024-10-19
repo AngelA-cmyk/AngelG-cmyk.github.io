@@ -1,0 +1,106 @@
+body {
+    background-color: #110e0e; 
+    color: #fafae4; 
+}
+
+.container {
+    max-width: 1280px; 
+    font-family: "Segoe UI"; 
+    background-color: #050505;
+    margin: 40px auto; 
+    box-sizing: border-box; 
+    padding: 20px; 
+    border: 2px solid #ddd; 
+    border-radius: 10px; 
+}
+
+.h1 {
+    font-size: 36px; 
+    font-weight: bold; 
+    margin-bottom: 10px; 
+    text-align: center; 
+}
+
+.p1 {
+    font-weight: bold; 
+    text-align: center; 
+}
+
+.container3 {
+    max-width: 1280px; 
+    margin-top: 40px; 
+    background-color: #050505; 
+    padding: 20px; 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+}
+
+.container3 ul {
+    list-style: none; 
+    margin: 0; 
+    padding: 0; 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+}
+
+.container3 li {
+    font-family: Arial, sans-serif; 
+    font-size: 16px; 
+    color: #fcfcf1; 
+    margin: 20px; 
+    font-weight: bold; 
+    text-align: center; 
+}
+
+.container3 img {
+    width: 220px; 
+    height: 140px; 
+    border-radius: 8%; 
+    transition: transform 0.3s ease; 
+}
+
+.container3 img:hover {
+    transform: scale(1.1); 
+}
+
+.container3 p {
+    margin-top: 5px; 
+}
+
+a {
+    color: white; 
+    text-decoration: none; 
+}
+
+a:hover {
+    text-decoration: underline; 
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    .h1 {
+        font-size: 28px; 
+    }
+
+    .container3 img {
+        width: 180px; /* Disminuir el ancho de la imagen */
+        height: 120px; /* Disminuir la altura de la imagen */
+    }
+
+    .container3 li {
+        margin: 10px; /* Espacio reducido entre elementos */
+    }
+}
+
+@media (max-width: 480px) {
+    .h1 {
+        font-size: 24px; 
+    }
+
+    .container3 img {
+        width: 150px; /* Ancho más pequeño para pantallas muy pequeñas */
+        height: 100px; /* Altura más pequeña para pantallas muy pequeñas */
+    }
+}
